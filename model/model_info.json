@@ -1,0 +1,410 @@
+{
+  "model_name": "Logistic regression (L1, class_weight='balanced')",
+  "best_params": {
+    "C": 0.1,
+    "l1_ratio": 1.0
+  },
+  "cv_f1": 0.49270860507595,
+  "test_metrics": {
+    "accuracy": 0.75712,
+    "precision": 0.3565815324165029,
+    "recall": 0.7773019271948608,
+    "f1": 0.4888888888888889,
+    "roc_auc": 0.8597704316329999
+  },
+  "sklearn_version": "1.9.1",
+  "numeric_base": [
+    "heart_rate",
+    "body_temperature",
+    "hydration_level",
+    "sleep_quality",
+    "recovery_score",
+    "stress_level",
+    "muscle_activity",
+    "joint_angles",
+    "gait_speed",
+    "cadence",
+    "step_count",
+    "jump_height",
+    "ground_reaction_force",
+    "range_of_motion",
+    "ambient_temperature",
+    "humidity",
+    "altitude",
+    "training_intensity",
+    "training_duration",
+    "training_load",
+    "fatigue_index",
+    "age",
+    "bmi"
+  ],
+  "roll_cols": [
+    "recovery_score",
+    "sleep_quality",
+    "fatigue_index",
+    "training_load"
+  ],
+  "numeric_features": [
+    "heart_rate",
+    "body_temperature",
+    "hydration_level",
+    "sleep_quality",
+    "recovery_score",
+    "stress_level",
+    "muscle_activity",
+    "joint_angles",
+    "gait_speed",
+    "cadence",
+    "step_count",
+    "jump_height",
+    "ground_reaction_force",
+    "range_of_motion",
+    "ambient_temperature",
+    "humidity",
+    "altitude",
+    "training_intensity",
+    "training_duration",
+    "training_load",
+    "fatigue_index",
+    "age",
+    "bmi",
+    "recovery_score_roll5",
+    "sleep_quality_roll5",
+    "fatigue_index_roll5",
+    "training_load_roll5",
+    "recovery_score_trend3",
+    "sleep_quality_trend3",
+    "fatigue_index_trend3",
+    "training_load_trend3"
+  ],
+  "categorical_features": [
+    "sport_type",
+    "gender",
+    "playing_surface"
+  ],
+  "features": [
+    "heart_rate",
+    "body_temperature",
+    "hydration_level",
+    "sleep_quality",
+    "recovery_score",
+    "stress_level",
+    "muscle_activity",
+    "joint_angles",
+    "gait_speed",
+    "cadence",
+    "step_count",
+    "jump_height",
+    "ground_reaction_force",
+    "range_of_motion",
+    "ambient_temperature",
+    "humidity",
+    "altitude",
+    "training_intensity",
+    "training_duration",
+    "training_load",
+    "fatigue_index",
+    "age",
+    "bmi",
+    "recovery_score_roll5",
+    "sleep_quality_roll5",
+    "fatigue_index_roll5",
+    "training_load_roll5",
+    "recovery_score_trend3",
+    "sleep_quality_trend3",
+    "fatigue_index_trend3",
+    "training_load_trend3",
+    "sport_type",
+    "gender",
+    "playing_surface"
+  ],
+  "categories": {
+    "sport_type": [
+      "Basketball",
+      "Other",
+      "Soccer",
+      "Track"
+    ],
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "playing_surface": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "ranges": {
+    "heart_rate": {
+      "min": 40.0,
+      "max": 115.00629756201808,
+      "median": 72.3506096895394,
+      "is_int": false
+    },
+    "body_temperature": {
+      "min": 35.8,
+      "max": 38.493789327340934,
+      "median": 37.10639919266335,
+      "is_int": false
+    },
+    "hydration_level": {
+      "min": 49.913258595970184,
+      "max": 100.0,
+      "median": 78.15669598143306,
+      "is_int": false
+    },
+    "sleep_quality": {
+      "min": 1.9285714285714288,
+      "max": 10.0,
+      "median": 5.757204519167776,
+      "is_int": false
+    },
+    "recovery_score": {
+      "min": 20.672459173975536,
+      "max": 96.19702456145876,
+      "median": 54.281630610939374,
+      "is_int": false
+    },
+    "stress_level": {
+      "min": 0.1,
+      "max": 0.8450518058245717,
+      "median": 0.4214458390942489,
+      "is_int": false
+    },
+    "muscle_activity": {
+      "min": 10.0,
+      "max": 553.0913117742423,
+      "median": 245.3421942345593,
+      "is_int": false
+    },
+    "joint_angles": {
+      "min": 45.0,
+      "max": 175.0,
+      "median": 112.5769513845071,
+      "is_int": false
+    },
+    "gait_speed": {
+      "min": 0.8,
+      "max": 3.2996079494557895,
+      "median": 1.8553541407161815,
+      "is_int": false
+    },
+    "cadence": {
+      "min": 50.0,
+      "max": 147.00700101074844,
+      "median": 85.64628102930622,
+      "is_int": false
+    },
+    "step_count": {
+      "min": 2429.22,
+      "max": 13238.920000000013,
+      "median": 7844.0,
+      "is_int": true
+    },
+    "jump_height": {
+      "min": 0.15,
+      "max": 0.85,
+      "median": 0.4826879000886234,
+      "is_int": false
+    },
+    "ground_reaction_force": {
+      "min": 800.0,
+      "max": 2542.8795792048104,
+      "median": 1665.226441575042,
+      "is_int": false
+    },
+    "range_of_motion": {
+      "min": 67.26008882070595,
+      "max": 180.0,
+      "median": 124.39407359142484,
+      "is_int": false
+    },
+    "ambient_temperature": {
+      "min": 15.0,
+      "max": 37.152644068262084,
+      "median": 24.822600378035897,
+      "is_int": false
+    },
+    "humidity": {
+      "min": 30.0,
+      "max": 85.0,
+      "median": 58.17483971191451,
+      "is_int": false
+    },
+    "altitude": {
+      "min": 0.0,
+      "max": 831.0591627557978,
+      "median": 282.7329312008172,
+      "is_int": false
+    },
+    "training_intensity": {
+      "min": 2.304593054926593,
+      "max": 10.0,
+      "median": 6.412036444946048,
+      "is_int": false
+    },
+    "training_duration": {
+      "min": 30.0,
+      "max": 155.12038763065513,
+      "median": 87.8715216178615,
+      "is_int": false
+    },
+    "training_load": {
+      "min": 150.0,
+      "max": 1557.8369576866987,
+      "median": 646.6610313653435,
+      "is_int": false
+    },
+    "fatigue_index": {
+      "min": 15.0,
+      "max": 129.30449674241677,
+      "median": 57.14433505808404,
+      "is_int": false
+    },
+    "age": {
+      "min": 18.0,
+      "max": 33.0,
+      "median": 24.0,
+      "is_int": true
+    },
+    "bmi": {
+      "min": 18.5,
+      "max": 28.098896928454234,
+      "median": 22.988013267603883,
+      "is_int": false
+    },
+    "recovery_score_roll5": {
+      "min": 29.824947430490873,
+      "max": 80.30500056273438,
+      "median": 55.13858750378522,
+      "is_int": false
+    },
+    "sleep_quality_roll5": {
+      "min": 3.4438918844300956,
+      "max": 8.289135923525672,
+      "median": 5.808145026151877,
+      "is_int": false
+    },
+    "fatigue_index_roll5": {
+      "min": 33.75415432823109,
+      "max": 101.78066089962178,
+      "median": 57.7466735358787,
+      "is_int": false
+    },
+    "training_load_roll5": {
+      "min": 339.6602855043849,
+      "max": 1116.2477240792387,
+      "median": 656.2759299251431,
+      "is_int": false
+    },
+    "recovery_score_3ago": {
+      "min": 20.672459173975536,
+      "max": 96.19702456145876,
+      "median": 54.281630610939374,
+      "is_int": false
+    },
+    "sleep_quality_3ago": {
+      "min": 1.9285714285714288,
+      "max": 10.0,
+      "median": 5.757204519167776,
+      "is_int": false
+    },
+    "fatigue_index_3ago": {
+      "min": 15.0,
+      "max": 129.30449674241677,
+      "median": 57.14433505808404,
+      "is_int": false
+    },
+    "training_load_3ago": {
+      "min": 150.0,
+      "max": 1557.8369576866987,
+      "median": 646.6610313653435,
+      "is_int": false
+    }
+  },
+  "examples": {
+    "Example: high-risk session": {
+      "heart_rate": 60.74299752096691,
+      "body_temperature": 37.41058379115557,
+      "hydration_level": 74.71950034389928,
+      "sleep_quality": 4.312841658239782,
+      "recovery_score": 27.00794020740945,
+      "stress_level": 0.2089628077625498,
+      "muscle_activity": 376.401051933246,
+      "joint_angles": 137.3904202522999,
+      "gait_speed": 2.0416045686133883,
+      "cadence": 98.96058349756714,
+      "step_count": 5207,
+      "jump_height": 0.5029594428689883,
+      "ground_reaction_force": 865.5650910468903,
+      "range_of_motion": 158.53558417945612,
+      "ambient_temperature": 24.1015884310907,
+      "humidity": 61.38657224908515,
+      "altitude": 97.44594545180448,
+      "training_intensity": 7.345349987387663,
+      "training_duration": 79.5576657483783,
+      "training_load": 995.1790542323006,
+      "fatigue_index": 123.54169897757065,
+      "age": 28,
+      "bmi": 21.42047784164182,
+      "recovery_score_roll5": 34.18215540705289,
+      "sleep_quality_roll5": 4.243637279015037,
+      "fatigue_index_roll5": 85.01347813354433,
+      "training_load_roll5": 791.3514342093408,
+      "recovery_score_trend3": -28.27571543416462,
+      "sleep_quality_trend3": -1.6553970530386843,
+      "fatigue_index_trend3": 29.200057838078507,
+      "training_load_trend3": 201.10143021909914,
+      "sport_type": "Other",
+      "gender": "Female",
+      "playing_surface": 2,
+      "recovery_score_3ago": 55.28365564157407,
+      "sleep_quality_3ago": 5.968238711278467,
+      "fatigue_index_3ago": 94.34164113949214,
+      "training_load_3ago": 794.0776240132014
+    },
+    "Example: low-risk session": {
+      "heart_rate": 72.6204075851772,
+      "body_temperature": 36.59769379608756,
+      "hydration_level": 83.56993638599816,
+      "sleep_quality": 7.820331964603902,
+      "recovery_score": 92.09262040371028,
+      "stress_level": 0.4239091050512895,
+      "muscle_activity": 355.997646124648,
+      "joint_angles": 115.73551095907362,
+      "gait_speed": 1.3618871786328843,
+      "cadence": 72.90501177352574,
+      "step_count": 10468,
+      "jump_height": 0.4045125593272883,
+      "ground_reaction_force": 1306.384782794108,
+      "range_of_motion": 173.6938188939567,
+      "ambient_temperature": 18.955129920638125,
+      "humidity": 48.091384679744735,
+      "altitude": 66.03467667403223,
+      "training_intensity": 5.725157818916268,
+      "training_duration": 46.51157406902595,
+      "training_load": 460.5489466156673,
+      "fatigue_index": 38.832316818153856,
+      "age": 26,
+      "bmi": 23.630079213160624,
+      "recovery_score_roll5": 69.8029539780535,
+      "sleep_quality_roll5": 5.863326217066626,
+      "fatigue_index_roll5": 43.42775965293332,
+      "training_load_roll5": 487.6800200123759,
+      "recovery_score_trend3": 37.745585917142584,
+      "sleep_quality_trend3": 3.6598204418951736,
+      "fatigue_index_trend3": -13.742791049978791,
+      "training_load_trend3": 143.4541040891009,
+      "sport_type": "Track",
+      "gender": "Male",
+      "playing_surface": 2,
+      "recovery_score_3ago": 54.3470344865677,
+      "sleep_quality_3ago": 4.160511522708728,
+      "fatigue_index_3ago": 52.57510786813265,
+      "training_load_3ago": 317.0948425265664
+    }
+  }
+}
